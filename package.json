@@ -1,11 +1,11 @@
 {
   "name": "react",
-  "homepage": "https://github.com/Gustaxz/to-do-list",
+  "homepage": "https://github.com/Gustaxz/todo-list.git",
   "private": true,
   "version": "0.0.0",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
