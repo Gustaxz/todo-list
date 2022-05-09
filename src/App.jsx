@@ -54,7 +54,6 @@ function App() {
   const catchStorage = async () => {
       let json = JSON.parse(saves)
       setListagem([...json]) 
-      console.log(saves)
  }
  
 
