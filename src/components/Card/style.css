@@ -1,0 +1,64 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wdth,wght@89.1,572&family=Fredoka&family=Inconsolata:wght@500&family=Lato:wght@700&display=swap');
+
+:root {
+    --bg-card: rgb(110, 110, 235)
+}
+
+.principal{
+    display: flex;
+    justify-content: center;
+    min-height: 100px;
+    flex-wrap: wrap;  
+    width: 450px;
+}
+
+
+.card {
+    width: 400px;
+    flex-shrink: 1;
+    border-radius: 5px;
+    padding: 20px 20px 20px 20px;
+    margin: 25px 0px 5px 0px;
+    display: flex;
+    gap: 120px;
+    justify-content: space-between;    
+    align-items: center;
+}
+
+.card p {
+    font-family: 'Lato', sans-serif;
+    margin: 3px 0;
+    color: white;
+}
+
+.card p:nth-child(1) {
+    font-size: 23px;
+}
+
+
+.x {
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 4px 8px;
+    height: 22px;
+    font-size: 20px;
+    font-weight: bold;
+    background: rgb(28,28,28);
+}
+
+
+@media screen and (max-width: 480px) {
+    .card {
+        gap: 3%;
+    }
+
+    .principal {
+        width: 75%;
+    }
+
+    .card {
+        max-width: 70%;
+    }
+    
+}

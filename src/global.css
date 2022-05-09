@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:wght@200&family=Mochiy+Pop+P+One&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wdth,wght@89.1,572&family=Fredoka&family=Inconsolata:wght@500&family=Lato:wght@700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(28,28,28);
+}
+
+:root {
+    --bg: rgb(28,28,28);
+    --green: rgb(35, 211, 35);
+    --orange: rgb(228, 188, 59)
+}
+
+.container {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.entrada {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 50px 0 20px 0;
+}
+
+.entrada input {
+    font-family: 'Lato', sans-serif;
+    font-size: 23px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    width: 25%;
+    min-width: 50%;
+    padding: 20px;
+    height: 30px;
+}
+
+.entrada select {
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    height: 40px;
+}
+
+.inputCor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+
+    margin: 0 0 40px 0;
+}
+
+.botoes button {
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    padding: 1%;
+}
+
+.botoes button:first-child {
+    background: var(--bg);
+    color: var(--green);
+    border: var(--green) 2px solid;
+    transition: all 0.5s;
+}
+
+.botoes button:last-child {
+    background: var(--bg);
+    border: var(--orange) 2px solid;
+    color: var(--orange);
+    transition: all 0.25s;
+}
+
+.botoes button:first-child:active {
+    transition: all 0.25s;
+    transform: scale(0.85);
+}
+
+.botoes button:first-child:hover {
+    transition: all 0.25s;
+    box-shadow: 0 0 10px var(--green);
+    text-shadow: var(--green) 0 0 1px;
+}
+
+.botoes button:last-child:active {
+    transition: all 0.25s;
+    transform: scale(0.85);
+}
+
+.botoes button:last-child:hover {
+    transition: all 0.25s;
+    box-shadow: 0 0 10px var(--orange);
+    text-shadow: var(--orange) 0 0 1px;
+}
+
+
+.box-cor {
+    border-radius: 10px;
+    border: none;
+    height: 20px;
+    width: 45px;
+}
+
+.cards {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
